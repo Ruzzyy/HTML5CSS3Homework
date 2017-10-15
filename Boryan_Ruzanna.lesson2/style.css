@@ -2,32 +2,43 @@ body {
     width: 1280px;
     margin: auto;
 }
+
 /*----------header-------*/
 .main-header {
     width: 100%;
     height: 323px;
     background-color: #445161;
+    display: flex;
+    justify-content: space-around;
 }
 
-/*------рисунок в header---- */
-/*.main-header img {*/
-/*background-color:  #ffffff;*/
-/*width: 469px;*/
-/*height: 214px;*/
-/*top: 0px;*/
-/*margin: 40px;}*/
 
-/*-----------h1----------*/
+/*------рисунок в header---- */
+.main-header img {
+    background-color:  #ffffff;
+    width: 469px;
+    height: 214px;
+    margin: 30px;
+}
+
+/*-----------Заголовки----------*/
 h1{
     font-family: Arial, serif;
     color:  #ffffff;
     font-size: 60px;
     font-weight: 400;
     text-align: left;
-    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
-    width: 500px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
     margin: 0;
     padding: 20px;
+}
+
+h3 {
+    font-family: Arial, serif;
+    color:  #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
 }
 
 /*--------список ul>li---------*/
@@ -44,27 +55,53 @@ h1{
     font-weight: 400;
     line-height: 36px;
     text-align: left;
-    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    list-style-image: url(img/icon.png);
 }
 
 li:before{
-    content: '✔';
     color: white;
 }
 
-/*--------заголовок h3----------*/
-h3 {
+/*----------About product---------*/
+
+.about-product h3 {
     font-family: Arial, serif;
     color:  #445161;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
+    text-align: left;
 }
 .about-product {
     color: #000;
     height: 300px;
-    margin: 30px
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
 }
+
+.about-product div img{
+    background-color:  #445161;
+    width: 430px;
+    height: 245px;
+}
+
+
+
+/*.about-product h3 {*/
+    /*font-family: Arial, serif;*/
+    /*color:  #445161;*/
+    /*font-size: 30px;*/
+    /*font-weight: 400;*/
+    /*line-height: 36px;*/
+    /*text-align: left;*/
+/*}*/
+/*.about-product {*/
+    /*color: #000;*/
+    /*height: 300px;*/
+    /*margin: 30px*/
+/*}*/
 
 /*------Абзац-------*/
 p{
@@ -94,10 +131,15 @@ p{
 details summary::-webkit-details-marker {
     display: none;
 }
+
 details summary:before {
     content: " + ";
     color: #ffffff;
-    background-color: #445161
+    background-color: #445161;
+    /*убрать, если что*/
+    font-size: xx-large;
+    margin: 0 5px 70px 0;
+
 }
 details[open] summary:before {
     content: " - ";
@@ -112,6 +154,7 @@ details summary {
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    outline: 0;
 }
 
 /* --------- глава Screenshots--------- */
@@ -160,7 +203,8 @@ figcaption p {
 
 .reviews {
     background-color: #f5f5f5;
-    height: 400px;
+    height: 450px;
+
 }
 
 .reviews h3 {
@@ -170,14 +214,17 @@ figcaption p {
 
 .reviews article {
     align-content: space-between;
-    float: left;
     padding: 5px 35px;
     position: relative;
+    /*width: 500px;*/
+    width: 483px;
+    height: 121px;
+    float: left;
 }
 
 .reviews article p {
     position: absolute;
-    margin: 0px;
+    margin: 0;
     top: 15px;
     left: 140px;
     height: 80px;
@@ -198,7 +245,7 @@ figcaption p {
     font-weight: 400;
     line-height: 18px;
     text-align: left;
-    margin: 0px;
+    margin: 0;
     bottom: 15px;
     left: 140px;
 }
@@ -206,11 +253,20 @@ figcaption p {
 .price {
     display: flex;
     width: 1280px;
-    height: 656px;
+    height: 556px;
     justify-content: center;
 }
+
+ h3 {
+    font-family: Arial, serif;
+    color:  #445161;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    padding: 15px 0 10px 0;
+}
 .price div {
-    border: double;
+    border: 1px solid #445161;
     background-color: #445161;
     align-self: flex-end;
     float: left;
@@ -218,12 +274,12 @@ figcaption p {
     border-radius: 10px;
 }
 .price div h4 {
-    font-family: Arial;
+    font-family: Arial, serif;
     color:  #ffffff;
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
-    text-align: left;
+    text-align: center;
     margin: 15px;
 }
 .price div p{
@@ -239,6 +295,7 @@ figcaption p {
     margin: 0;
 }
 .price div input{
+
     border-radius: 5px;
     background-color:  #ffffff;
     width: 260px;
@@ -267,4 +324,105 @@ figcaption p {
     height: 499px;
 }
 
+/*-----------------глава contacts---------------*/
+.contacts-main {
+    width: 1280px;
+    height: 509px;
+    background-color: #445161;
+}
 
+.contacts-main h3 {
+    font-family: Arial, serif;
+    color:  #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    padding: 15px 0 10px 0;
+    width: 100%;
+}
+.contacts {
+    display: flex;
+    justify-content: center;
+}
+.contacts-form input {
+    font-family: Arial, serif;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    border-radius: 5px;
+    background-color:  #ffffff;
+    width: 500px;
+    height: 40px;
+    margin: 10px 0;
+}
+
+.contacts-form .button {
+    border-radius: 5px;
+    background-color:  #ffffff;
+    width: 140px;
+    height: 40px;
+    font-family: Arial, serif;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 40%;
+}
+
+.contacts-form textarea {
+    border-radius: 5px;
+    background-color:  #ffffff;
+    width: 500px;
+    height: 170px;
+    font-family: Arial, serif;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+/*--соц.сети*---*/
+.contacts-list {
+    width: 300px;
+    height: 300px;
+    margin: 0 10px;
+}
+.contacts-list p{
+    font-family: Arial,serif;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.contacts-list img {
+    width: 24px;
+    height: 26px;
+    float: left;
+    margin: 5px 10px;
+}
+
+.contacts-list a img{
+    width: 240px;
+    height: 42px;
+    margin: 5px 10px;
+}
+
+
+/*---------footer------------*/
+footer p{
+    font-family: Arial, serif;
+    color:  #445162;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    text-align: center;
+}
