@@ -249,11 +249,29 @@ figcaption p {
 }
 
 /*------------глава Price----------------*/
+
 .price {
     display: flex;
     width: 1280px;
     height: 556px;
     justify-content: center;
+}
+
+.button {
+    display: flex;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 260px;
+    height: 40px;
+    margin: 0 auto;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.button_title {
+    margin: auto;
+    color: black;
+    text-transform: uppercase;
 }
 
  h3 {
