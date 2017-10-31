@@ -81,10 +81,10 @@ li:before{
     justify-content: space-around;
 }
 
-.about-product div img{
-    background-color:  #445161;
+.about-product div video{
     width: 430px;
     height: 245px;
+    border: double;
 }
 
 /*------Абзац-------*/
