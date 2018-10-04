@@ -1,0 +1,153 @@
+/*задание параметров для фона*/
+body {
+    background-color: ghostwhite;
+    min-width: 800px;
+    max-width: 1100px;
+    width: 90%;
+    margin: 15px auto;
+}
+
+header
+{
+    background-color: #D3E9F9; /* Цвет фона элемента*/
+    border:thin #54985B solid; /* Выбор границ элемента*/
+    padding: 10px; /* Пространство внутри элемента*/
+    margin: 15px auto; /* Пространство за пределами документа. В данном случае располагает по центру*/
+    margin-bottom: 10px; /* Отступ снизу элемента*/
+    margin-top: 10px; /* Отступ сверху элемента*/
+    text-align:center; /* Расположение текста внутри элемента*/
+    width:90%; /* Ширина блока*/
+}
+
+#content {
+    background-color: #D3E9F9;
+    border:thin #54985B solid; /* Выбор границ элемента*/
+    padding: 10px; /* Пространство внутри элемента*/
+    margin: auto; /* Пространство за пределами документа. В данном случае располагает по центру*/
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width:90%; /* Ширина блока*/
+    text-align:justify; /* Расположение текста внутри элемента*/
+}
+
+nav {
+    background-color: #D3E9F9;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    margin: auto;
+    width: 90%; /* Ширина блока*/
+    text-align: center; /* Расположение текста внутри элемента*/
+    border: 1px solid #ccc;
+}
+
+nav a {
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #f1f1f1;
+}
+
+nav a:hover {
+    background-color: #bababa;
+    height: 80px;
+}
+/*конец блоков навигации*/
+
+form {
+    max-width: 800px;
+    padding: 0px 30px;
+    margin: auto;
+    text-align: left; /* Расположение текста внутри элемента*/
+}
+
+form input:required {
+    background-color: lightyellow;
+}
+
+form h1 {
+    margin-bottom: 0px;
+}
+
+form p {
+    margin-top: 0px;
+}
+
+form fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+form legend {
+    padding: 0px 3px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+form label {
+    width: 150px;
+    display: inline-block;
+    margin: 6px;
+    text-align: justify;
+}
+
+form em {
+    font-weight: bold;
+    font-style: normal;
+    color: red;
+}
+
+form input:focus {
+    background-color: #eaeaea;
+}
+
+form input, textarea {
+    width: 249px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form select {
+    width: 254px;
+}
+
+form input[type=checkbox] {
+    width: 30px;
+}
+
+form input[type=submit] {
+    width: 170px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
